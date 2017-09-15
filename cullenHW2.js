@@ -9,7 +9,7 @@ for (let i=0; i < arrayOfStrings.length; i++) {
 }
 return arrayOfLengths;
 };
-lengths(['dylan', 'bob', 'sam']);
+lengths([]);
 
 //Problem #2
 const transmogrifier =(num1, num2, num3) => {
@@ -63,4 +63,12 @@ const longest = (arrayOfStrings) => {
 longest(['cullen', 'Cullen', 'pitch']);  --> output is cullen
 
 //Problem #7
+const repMaster = (input, upperCase) => {
+	return (upperCase(input) + ' proves that I am the rep MASTER')
+};
+
+const upperCase = (input) => {
+	return input.toUpperCase();
+};
+repMaster('I finished the practice', upperCase);
 
